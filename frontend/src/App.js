@@ -1,9 +1,18 @@
-function App() {
-  return (
-    <div className="App">
-      <h1>React</h1>
-    </div>
-  );
-}
+import React from 'react'
+import Header from './components/Header'
+import { Container } from 'react-bootstrap'
 
-export default App;
+const App = () => {
+  return (
+    <>
+    <Header/>
+    <main className='py-3'>
+      <Container>
+        <h1>Welcome to Catering Marketplace</h1>
+      </Container>
+    </main>
+    </>
+  )
+} 
+
+export default App
