@@ -1,7 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
-import connectDB from "./config/db.js"; // Assuming connectDB is using export default
+import connectDB from "./config/db.js";
+
 import productRoutes from "./routes/productRoutes.js";
+import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 
 dotenv.config();
 
@@ -17,6 +19,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+
+app.use(notFound);
+app.use(errorHandler);
 
 // Start the server
 app.listen(port, () => {
