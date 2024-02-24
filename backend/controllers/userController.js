@@ -10,7 +10,7 @@ const authUser = asyncHandler(async (req, res) => {
 
     res.status(200).json({
       _id: user._id,
-      name: user.email,
+      name: user.name,
       email: user.email,
       isAdmin: user.isAdmin,
     });
