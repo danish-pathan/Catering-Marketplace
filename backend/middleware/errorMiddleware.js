@@ -14,12 +14,10 @@ const errorHandler = (err, req, res, next) => {
     statusCode = 404;
   }
 
-  res
-    .status(statusCode)
-    .json({
-      message,
-      stack: process.env.NODE_ENV === "production" ? "🍪" : err.stack,
-    });
+  res.status(statusCode).json({
+    message,
+    stack: process.env.NODE_ENV === "production" ? "🍪" : err.stack,
+  });
 };
 
 export { notFound, errorHandler };
