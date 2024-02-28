@@ -6,7 +6,7 @@ import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
-import { useCreateOrderMutation } from "../slices/OrdersApiSlice";
+import { useCreateOrderMutation } from "../slices/ordersApiSlice";
 import { clearCartItems } from "../slices/cartSlice";
 
 const PlaceOrderScreen = () => {
