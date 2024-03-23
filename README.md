@@ -3,6 +3,12 @@
 Welcome to the CaterPro repository! CaterPro is a web application designed to streamline the catering experience for both users and admins. 
 - Customer: Explore a diverse selection of catering options with detailed descriptions. Effortlessly place orders online and track past purchases for easy reordering. Manage user profiles for a personalized experience.
 - Admin: Manage products by uploading, updating, or removing them with comprehensive details. View all customer orders in a centralized dashboard for efficient processing. Update delivery status to keep customers informed.
+
+## Deployment
+**Check it out live:** [CaterPro](https://caterpro.onrender.com/)
+
+CaterPro is now live and ready for you to explore! Simply click the link above to visit the site deployed on Render.
+
 ## Demo Videos
 
 - **User Demo:**
